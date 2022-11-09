@@ -16,8 +16,8 @@ The general contract of **hashCode** is:
    information used in **equals** comparisons on the object is modified. This integer need not
    remain consistent from one execution of an application to another execution of the same
    application.
-2. If two objects are equal according to the **equals(Object)** method, then calling the **
-   hashCode** method on each of the two objects must produce the same integer result.
+2. If two objects are equal according to the **equals(Object)** method, then calling the 
+   **hashCode** method on each of the two objects must produce the same integer result.
 3. It is not required that if two objects are unequal according to the **equals(java.lang.Object)**
    method, then calling the **hashCode** method on each of the two objects must produce distinct
    integer results. However, the programmer should be aware that producing distinct integer results
@@ -36,18 +36,16 @@ Indicates whether some other object is "equal to" this one.
 
 The **equals** method implements an equivalence relation on non-null object references:
 
-1. It is _reflexive_: for any non-null reference value **x**, **x.equals(x)** should return **true**
-   .
+1. It is _reflexive_: for any non-null reference value **x**, **x.equals(x)** should return 
+   **true**.
 2. It is _symmetric_: for any non-null reference values **x** and **y**, **x.equals(y)** should
    return **true** if and only if **y.equals(x)** returns **true**.
 3. It is _transitive_: for any non-null reference values **x**, **y**, and **z**, if **x.equals(y)**
-   returns **true** and
-   **y.equals(z)** returns **true**, then **x.equals(z)** should return **true**.
-4. It is _consistent_: for any non-null reference values **x** and **y**, multiple invocations of **
-   x.equals(y)**
-   consistently return **true** or consistently return **false**, provided no information used in **
-   equals**
-   comparisons on the objects is modified.
+   returns **true** and **y.equals(z)** returns **true**, then **x.equals(z)** should return 
+   **true**.
+4. It is _consistent_: for any non-null reference values **x** and **y**, multiple invocations of 
+   **x.equals(y)** consistently return **true** or consistently return **false**, provided no 
+   information used in **equals** comparisons on the objects is modified.
 5. For any non-null reference value **x**, **x.equals(null)** should return **false**.
 
 The **equals** method for class **Object** implements the most discriminating possible equivalence
